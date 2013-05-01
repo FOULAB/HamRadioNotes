@@ -1,0 +1,398 @@
+
+Un résumé technique que je m'étais fait pour l'exam coté FR.
+Si ça peut vous aider à faire un checkup.
+
+---
+
+U = R.I
+P = U.I   P=U^2/R     P=I^2.R
+          U=sqr(P.R) I=sqr(P/R) 
+
+Résistances en série : R = R1 + R2 + Rn
+Resistances en parallèle : 1/R = 1/R1 + 1/R2 + 1/Rn
+Lois des mailles : i1 + i2 + in = 0
+Pont diviseur de tension : Us = Ue . R2 / (R1 + R2)
+
+Résistivité : R = rho * l / s
+Rendement = Energie utile / Energie absorbée
+1 J = 1 Ws (J = joule, mesure de travail / d'énergie)
+
+Inductance : L = U.t / I
+L = k . ( N^2 . s ) / l
+
+Capacité : C = I.t / U
+C = k.(A/d)  A=surface, d=distance des lames, k=cst diaéléctrique
+
+Coulomb (quantité d'électricité) : Q = C.U
+Constatante de temps et condensateur : tau (en seconde)
+t = R.C, 63%
+5t = 5.R.C, 99.3%
+
+Groupement d'inductance : comme les résistance
+Groupement de condensateur : inverse des groupement de résistance
+
+Circuit capacitif : Le courant est en avance sur la tention
+Circuit inductif : Le courant est en retard sur la tension
+
+Self : 
+si inductane aug. -> xl aug.
+si frequence aug. -> xl aug.
+
+Capa :
+si capacitance aug. -> xl dim.
+si frequence aug. -> xl dim.
+
+Inductance d'une bobine : xl = 2.pi.f.L
+Inductance d'un condensateur : xc = 1 / (2.pi.f.C)
+Inductance d'un RC : Z = sqr(R^2 + xc^2)
+Inductance d'un RL : Z = sqr(R^2 + xl^2)
+Inductance d'un RLC série : Z = sqr(R^2 + (xl-xc)^2)
+Inductance d'un RLC paral : Z = 1 / sqr((1/R)^2 + (1/xl-1/xc)^2)
+
+
+Circuit RLC à la résonnnance : Z = R
+Pour un circuit LC pur : X = xl - xc
+RLC série : impédance minimale à la résonnance (=R)
+RLC parallèle : impédence maximale à la résonnance 
+
+f0 = 1 / (2.pi.sqrt(L.C))
+freq coupure passe bas : f0 = 1 / (2.pi.R.C)
+
+Ucrete = sqr(2) . Ueff
+Papparante = U.I (en VA)
+Préelle = U.I.cos(dephasage) (en W)  &   cos(dephasage) = R/Z
+Préact = U.I.sin(dephasage) (en var)
+
+
+Rapport de transformation = Np/Ns = Up/Us = Is/Ip = sqr(Zp/Zs)
+Rapport de puissance (dB) = 10 . log(P2/P1)
+Rappont de tensions (dB) = 20.log(U2/U1)
+Rappont de courants (dB) = 20.log(I2/I1)
+U = sqr(P.Z)
+
+coef = 10^(rapport en dB / 10)
+
+équiv noms: (p. 153, 154)
+- passe bance : circuit réjecteur
+- coupe bande : circuit bouchon (bande rejetée), notch filter
+
+Filtre en L, en T, en pi
+
+Frequence de coupure RC : fc = 1/(2.pi.R.C)
+Facteur de qualité : Q = xl / R  =  xc / R (à fo, pour un circuit série)
+Facteur de qualité : Q = R / xl  =  R / xc (à fo, pour un circuit parallele)
+
+Bande passante normalisée : f0 / Q
+
+Note : pulsation est diff de période...
+
+Transfo
+rapport = Np/Ns = Up/Us = Is/Ip = sqr(Zp/Zs)
+
+tableau transistor : tension, inv et inpédance
+
+FET : Drain / Gate / Source
+Gm = Id / Ig
+
+Ampli OP :
+Ginv = -R2/R1
+Gnoninv = 1 + R2/R1
+
+Lampes : Triode, penthode
+Condo de liaison, de découplage
+
+Indice de modulation (FM) = delta f / f mod
+
+AM : 1/3 de de la puissance dans la porteuse, 1/6 dans chaque bande latérale
+
+Facteur de forme : Bande passante à -60 db / Bande passante à -3 db
+
+ROS = Umax / Umin = Imax / Imin = Z0 / R
+ROS = ( sqr(Pdirecte) + sqr(Préfléchie) )  /  ( sqr(Pdirecte) + sqr(Préfléchie) )
+
+TOS = racine (Puissance réfléchie / puissance émise) x 100 ; 
+TOS = (ros-1) / (ros+1)
+
+Z Qmatch = sqr(Z1 . Z2)
+
+ATTENTION !!!
+- Unitées
+- Surface vs section
+- ^2 et ^3
+- LIRE L'ENONCE en COMPLET
+- bien lire les questions, vérif les chiffres, faute d'attention...
+- relire l'énonce après la réponse...
+- si reste du temps, vérif calculs de tete avec caltoch
+- si reste du temps, refaire les calculs
+- vérif les polaritées dans les amplis op
+
+=======================================
+
+3dB		x2
+6dB		x4
+9dB		x8
+10dB	x10
+20dB	x100
+30dB	x1000
+
+S9+70	- 3dBm		158mV
+S9+60	-13dBm		50.18mV
+S9+50	-23dBm		15.09mV
+S9+40	-33dBm		5.014mV
+S9+30	-43dBm		1585uV
+S9+20	-53dBm		501uV
+S9+10	-63dBm		160uV
+S9		-73dBm		50.15uV
+S8		-79dBm		25.13uV
+S7		-85dBm		12.6uV
+S6		-91dBm		6.31uV
+S5		-97dBm		3.16uV
+S4		-103dBm		1.59uV
+S3		-109dBm		0.79uV
+S2		-115dBm		0.40uV
+S1		-121dBm		0.20uV
+
+ 1uV = -107dB
+50uV = -73dB
+
++60dBm	224V	1000W
++50dBm	70.8V	100W
++40dBm	22.4V	10W
++30dBm	7.08V	1W
++20dBm	2.24V	100mW
++10dBm	708mV	10mW
+0dBm	224mV	1mW
+-10dBm	70mV	100uW
+-20dBm	22mV	10uW
+-30dBm	7.08mV	1uW
+-40dBm	2.24mV	100nW
+-50dBm	708uV	10nW
+-60dBm	224uV	1nW
+-70dBm	70uV	100pW
+-80dBm	22uV	10pW
+-90dBm	7.08uV	1pW
+-100dBm	2.24uV	0.1pW
+-110dBm	708nV	0.01pW
+-120dBm	224nV	0.001pW
+-130dBm	70nV	
+-140dBm	22nV	
+-150dBm	7.08nV	
+-160dBm	2.24nV
+-170dBm	0.7nV
+-180dBm	0.2nV
+
+8 bits = -48dBm
+16 bits = -96dBm
+24 bits = -144dBm
+
+-174 dBm : limite théorique du bruit thermique par Hz
+-140 dBd : limite th pour une bande passante de 2400 Hz
+
+S-points for frequencies below 30 MHz:
+S1 		-48 dB 	0.20 uV -14 dBuV 	790 aW 	-121 dBm
+S2 		-42 dB 	0.40 uV -8 dBuV 	3.2 fW 	-115 dBm
+S3 		-36 dB 	0.79 uV -2 dBuV 	13 fW 	-109 dBm
+S4 		-30 dB 	1.6 uV 	4 dBuV 		50 fW 	-103 dBm
+S5 		-24 dB 	3.2 uV 	10 dBuV 	200 fW 	-97 dBm
+S6 		-18 dB 	6.3 uV 	16 dBuV 	790 fW 	-91 dBm
+S7 		-12 dB 	13 uV 	22 dBuV 	3.2 pW 	-85 dBm
+S8 		-6 dB 	25 uV 	28 dBuV 	13 pW 	-79 dBm
+S9 		0 dB 	50 uV 	34 dBuV 	50 pW 	-73 dBm
+S9+10 	10 dB 	160 uV 	44 dBuV 	500 pW 	-63 dBm
+S9+20 	20 dB 	500 uV 	54 dBuV 	5.0 nW 	-53 dBm
+S9+30 	30 dB 	1.6 mV 	64 dBuV 	50 nW 	-43 dBm
+S9+40 	40 dB 	5.0 mV 	74 dBuV 	500 nW 	-33 dBm
+S9+50 	50 dB 	16 mV 	84 dBuV 	5.0 uW 	-23 dBm
+S9+60 	60 dB 	50 mV 	94 dBuV 	50 uW 	-13 dBm
+
+S-points for frequencies above 30 MHz:
+S1 		-48 dB 	20 nV 	-34 dBuV 	7.9 aW 	-141 dBm
+S2 		-42 dB 	40 nV 	-28 dBuV 	32 aW 	-135 dBm
+S3 		-36 dB 	79 nV 	-22 dBuV 	130 aW 	-129 dBm
+S4 		-30 dB 	160 nV 	-16 dBuV 	500 aW 	-123 dBm
+S5 		-24 dB 	320 nV 	-10 dBuV 	2.0 fW 	-117 dBm
+S6 		-18 dB 	630 nV 	-4 dBuV 	7.9 fW 	-111 dBm
+S7 		-12 dB 	1.3 uV 	2 dBuV 		32 fW 	-105 dBm
+S8 		-6 dB 	2.5 uV 	8 dBuV 		130 fW 	-99 dBm
+S9 		0 dB 	5.0 uV 	14 dBuV 	500 fW 	-93 dBm
+S9+10 	10 dB 	16 uV 	24 dBuV 	5.0 pW 	-83 dBm
+S9+20 	20 dB 	50 uV 	34 dBuV 	50 pW 	-73 dBm
+S9+30 	30 dB 	160 uV 	44 dBuV 	500 pW 	-63 dBm
+S9+40 	40 dB 	500 uV 	54 dBuV 	5.0 nW 	-53 dBm
+S9+50 	50 dB 	1.6 mV 	64 dBuV 	50 nW 	-43 dBm
+S9+60 	60 dB 	5.0 mV 	74 dBuV 	500 nW 	-33 dBm
+(http://www.giangrandi.ch/electronics/radio/smeter/smeter.html)
+
+
+Classes d'émission
+
+Type d'information transmise (--2nd-- LETTRE) :
+  A : Télégraphie auditive
+  B : Télégraphie automatique
+  C : Fac-similé (image)
+  D : Transmission de données (packet)
+  E : Téléphonie
+  F : Télévision (vidéo)
+
+Nature du signal modulant :
+  1 : Sig Digital, Une seule voie SANS sous porteuse modulante
+  2 : Sig Digital, Une seule voie AVEC sous porteuse modulante
+  3 : Analogique (voie, image)
+  7 : Numérique (plusieur voies)
+  
+Type de modulation de la porteuse (--1er-- LETTRE) :
+  A : Amplitute, double bande normale
+  R : BLU porteuse réduite
+  J : BLU porteuse supprimé
+  C : Amplitude, double bande résiduelle
+  F : Fréquence
+  G : Phase
+  
+Code Q
+QRA		Nom de votre station ?
+QRG		Pouvez vous m'indiquer ma fréquence ?
+QRH		Ma fréquence vraie-t-elle ?
+QRK		Intelligibilité signaux ?
+QRL		Occupé ?
+QRM		Brouillé ?
+QRN		Parasité ?
+QRO		Power up ?
+QRP		Power down ?
+QRQ		Transmettre plus vite ?
+QRS		Transmettre plus lentement ?
+QRT		Dois-je cesser la transmission ?
+QRU		QQue chose pour moi ?
+QRV		Est-vous prêt ?
+QRX		Quand me rappelez vous ?
+QRZ		Par qui suis-je appelé ?
+
+QSA		Force signaux ?
+QSB		Force varie-t-elle ?
+QSL		Pouvez vous donner accusé de réception
+QSO		Pouvez vous communiquer avec ... ?
+QSP		Voulez vous retransmettre à ... ?
+QSY		Dois-je changer de fréquence ?
+
+QTH		Postion station ?
+QTR		Heure exacte ?
+
+AR		Fin de transmission
+AS		Attente
+CQ		Appel général
+DE		de
+BK		break
+K		over
+RST		Lisiblité/force/tonalité
+
+Bandes Région *1* :
+0.1357	- 0.1378	C E
+1.810	- 1.850		A
+3.500	- 3.800		B
+7.000	- 7.100		A
+10.100	- 10.150	C
+14.000	- 14.350	A
+18.068	- 18.168	A
+21.000	- 21.450	A
+24.890	- 24.990	A
+28.000	- 29.700	A F
+50.200	- 51.200	C D
+144		- 146/8		A F
+430		- 434		C
+434		- 440		B
+1240	- 1300		
+2300	- 2450		
+5650	- 5850  
+
+Indiactifs :
+F	France 1
+TK	Corse 1
+FG	Guadeloupe 2
+FR	Réunion 1
+FM	Martinique 2
+FP	St Pierre et Miquelon 2
+FK	Nouvelle Calédonie 3
+FH	Mayotte 1
+FS	St Martin 2
+FJ	St Barthélemy 2
+FT	Terre Australe
+FW	Wallis & Futuna 3
+FX	Statellite FR
+FO	Polynésie FR 3
+FY	Guyanne 2
+TO	DOM
+TM	15j
+
+DL	Allemagne
+ON	Belgique
+OE	Autriche
+OZ	Danemark
+OH	Finlande
+R	Russie
+I	Italie
+M	Angleterre
+MI	Irelande du Nord
+MW	Pays de Galles
+MM	Ecosse
+EA	Espagne
+LX	Luxembourg
+PA	Pays-Bas
+LA	Norvège
+SM	Suède
+SV	Grèce
+EI	Irlande
+SP	Pologne
+CT	Portugal
+HB9	Suisse
+UT	Ukraine
+JA	Japon
+
+3M	Monaco
+4L  Géorgie
+5B  Chypre
+9A  Croatie
+9H  Malte
+C3  Andorre
+CT  Portugal
+CU	Acores
+DL	Allemagne
+EA	Espagne
+EI	Irelande
+ER	Moldavie
+ES	Estonie
+M	Royaume-Uni
+MD	Ile de Man
+MI	Irelande du Nord
+MJ	Jersey
+MM	Ecosse
+MU	Guernesey
+MW	Pays de Galles
+HA	Hongrie
+HB9	Suisse
+HB0	Liechtenstein
+HV	Cité du Vatican
+I	Italie
+LA	Norvège
+LX	Luxembourg
+LY	Lituanie
+LZ	Bulgarie
+OE	Autriche
+OH	Finlande
+OK	République Tchèque
+OM	République Slovaque
+ON	Belgique
+OX	Groenland
+OY	Iles Féroé
+OZ	Danemark
+PA	Pays-Bas
+S5	Slovénie
+SM	Suède
+SP	Pologne
+SV	Grèce
+T7	Saint-Martin
+TA	Turquie
+TF	Islande
+UA	Russie
+UB	Ukraine
+YL	Lettonie
+YO	Roumanie
+ZA	Albanie
