@@ -1,0 +1,32 @@
+GROUNDED GRID VACUUM TUBE RF AMPLIFIER - MAJOR COMPONENTS
+FILAMENT TRANSFORMER - the secondary winding connects directly to the filament of the vacuum tube and is center tapped to prevent the applied AC from modulating the emitted wave
+TRIODE VACUUM TUBE - the control grid is connected to ground. The cathode is connected to a radio frequency choke and then a B- (bias) power supply. The plate is connected to a radio frequency choke which in turn connects to a B+ (high voltage) power supply.
+
+PI NETWORK - connects to the plate of the triode vacuum tube through a blocking capacitor. The plate and load tuning controls of a pi network tuned circuit allows for efficient transfer of power to the antenna at the resonant frequency.
+
+The input signal is applied to the cathode.
+
+Harmonics produced in an early stage of a transmitter may be reduced in a later stage by using tuned circuit coupling between stages.
+
+If an RF power amplifier stage is 50% efficient, the amount of power required by the stage will be twice the output power rating. Input power to the final stage can be calculated with the formula:
+
+P = E I (where P = power E = voltage I = current)
+
+
+
+
+> A grounded-grid amplifier runs with the grid at ground potential.  The cathode is above RF ground and serves as the input.  A DC bias is applied to the cathode via an RF choke.  Positive voltage (B+) is supplied to the plate via an RF choke.  The plate is the output, a blocking capacitor passes the RF out to the matching network.  A transformer provides AC filament voltage.  The heater (in an indirectly-heated cathode tube) is bypassed to ground so radiofrequency does not stray out on the filament supply lines.  [ If a tube is directly-heated (no separate cathode), filament voltage is brought through a filament choke.  The side of the choke connected to the transformer is bypassed to ground with two capacitors. ]
+
+%\begin{frame}{RF amps}{}
+%include graphic simple CW transmitter
+
+%Inductive coupling may be used between oscillator and RF power amp.  This forms another tuned circuit to further reduce undesired frequencies (harmonics)
+
+%Note uses of RF chokes to keep RF out of the power supply
+
+%Neutralization may be required on some vacuum tube amps to prevent parasitic oscillation due to capacitances inside the tube.  Couple a small amount of the output back to the input 180 degrees out of phase (negative feedback)
+
+%Neutralization is indicated by minimum change of grid current while output circuit is tuned.
+
+%\end{frame}
+

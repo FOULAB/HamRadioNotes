@@ -1,3 +1,6 @@
+hamradio3.pdf: hamradio3.tex
+	pdflatex hamradio3.tex
+	pdflatex hamradio3.tex
 
 hamradio.pdf: hamradio.tex
 	pdflatex hamradio.tex
